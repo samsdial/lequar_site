@@ -1,7 +1,7 @@
 {
-  "name": "your_project_name",
+  "name": "Lequar Site",
   "authors": [
-    "Demo <demo@example.com>"
+    "Demo <smartinez@lequar.com>"
   ],
   "private": true,
   "ignore": [

@@ -11,7 +11,7 @@ gulp.task('compile-sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('public/css/'))
+        .pipe(gulp.dest('docs/css/'))
         .pipe(browserSync.stream());
 });
 
@@ -20,7 +20,7 @@ gulp.task('compile-pug', function() {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest('public'))
+        .pipe(gulp.dest('docs'))
         .pipe(browserSync.stream());
 });
 
@@ -28,7 +28,7 @@ gulp.task('sync-javascript', function(cb) {
         pump([
             gulp.src('src/js/**/*.js'),
             uglify(),
-            gulp.dest('public/js/'),
+            gulp.dest('docs/js/'),
             browserSync.stream()
         ],
         cb

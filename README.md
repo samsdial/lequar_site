@@ -1,13 +1,14 @@
-# docker-pug-starter
+# Lequar Sitio Web 2017
 
-This is a starter project for a node + pug that uses docker for dev enironment.
-Docker and docker-compose is all you need to develop and build.
+LEQUAR Agencia Digital con más de 13 Años de experiencia en diferentes plataformas digitales.
 
-## Stack
+
+## Stack Tecnologic
 * Libsass
 * Node
 * Pug
 * Http-server
+
 
 ## get started
 ```
@@ -16,5 +17,5 @@ $ docker-compose up
 
 ## gulp
 ```
-$ docker exec -it lys_web_1 gulp watch
+$ docker exec -it lequarsite_web_1 gulp watch
 ```
