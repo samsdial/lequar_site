@@ -13,7 +13,8 @@ html(lang="es")
         meta(name="robots", content="index, follow")
         meta(name="author", content="Lequar")
         block vars
-            - var title="Sitio";
+            - var title="LEQUAR";
+            - var copy="Agencia Integral";
             - var description="Descricion";
             - var abstract='item, '
             - var keywords=''
@@ -22,7 +23,7 @@ html(lang="es")
             - var canonical=''
             - var shortlink=''
         block seo
-            title L&S Globla Solution - #{title}
+            title  #{title} -  #{copy}
             meta(name="description", content=description)
             meta(name="abstract", content=abstract)
             meta(name="keywords", content=keywords)
@@ -54,9 +55,9 @@ html(lang="es")
             script(src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js")
             <![endif]-->
     body
-        include ./_includes/_header.pug
+        //- include ./_includes/_header.pug
         block content
-        include ./_includes/_footer.pug
+        //- include ./_includes/_footer.pug
         block bottom-script
             script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
             script(src="js/snap.svg-min.js")

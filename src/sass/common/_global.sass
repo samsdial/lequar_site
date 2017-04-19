@@ -1,1 +1,33 @@
 // global
+// *, *::after, *::before
+//     @include box-sizing(border-box)
+html *
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+html
+    font-size: 62.5%
+body
+    font-size: 1.6rem
+    font-family: $primary-font
+
+a
+    text-decoration: none
+    +transition(all 0.3s ease-in-out)
+img
+    max-width: 100%
+
+input, textarea, select
+    font-family: $primary-font
+    font-size: 1.6rem
+
+p
+    font-family: $second-font
+    font-weight: 400
+    color: $lightBlack
+    line-height: 25px
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+    padding: 0
+
+ul, ol
+    padding-left: 19px

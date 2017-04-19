@@ -1,1 +1,60 @@
+$inicio: inicio col-1
+$col-1: col-1
+$col-2: col-1
+$col-3: col-1
+$col-4: col-1
+$final: final
 // grid
+main
+    section
+        &.container
+            +display(grid)
+            grid-template-columns:  1fr 1fr 1fr  1fr
+            // grid-template-rows: 100vh
+            article
+                +display(flex)
+                +justify-content(center)
+                +align-items(center)
+                &.col-1
+                    grid-column: 1 / 2
+                &.col-2
+                    grid-column: 1 / 2
+                &.col-3
+                    grid-column: 1 / 2
+                &.col-4
+                    grid-column: 1 / 2
+
+
+
+
+// main
+//     font-size: 30px
+//     +display(grid)
+//     grid-template-columns: 1fr 1fr 1fr 1fr
+//     grid-template-rows: 100vh
+//     +MQ(S)
+//         grid-template-columns: 1fr 1fr
+//         grid-template-rows: 50vh
+//     +MQ(L)
+//         grid-template-columns: 1fr 1fr 1fr 1fr
+//         grid-template-rows: 100vh
+// section
+//     border-top: 2px dashed $gray
+//     border-bottom: 2px dashed $gray
+//     border-left: 2px dashed red
+//     border-right: 2px dashed red
+//     +display(flex)
+//     +justify-content(center)
+//     +align-items(center)
+//     color: $black
+
+// .proximamente
+//     background-color: lightyellow
+//     grid-column: 1 / 2
+//     gird-row: 1 / 2
+// .por_hacer
+//     background-color: lavender
+// .haciendo
+//     background-color: lightcyan
+// .finalizado
+//     background-color: bisque
