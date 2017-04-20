@@ -1,14 +1,24 @@
 extends ./base/layout.pug
 
 block content
-    main
-        section.container
-            article.col-1
-                h1 uno
-            article.col-2
-                h1 dos
-            article.col-3
-                h1 tres
-            article.col-4
-                h1 cuatro
+    main.full
+        .row
+            section.end.column.column-middle.bgc--orange
+                article.box.box_site.box_site--left
+                    .content
+                        .title.cl--white
+                            h2 Titulo de prueba LQ
+                        .subtitle.cl--white
+                            h3 Subtitulo de prueba LQ
+                        .paragraf.cl--white
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, earum nisi est, ut ex impedit. Dolorem quam suscipit voluptas nemo ut, animi ullam, mollitia ducimus itaque esse, dolores aliquid laboriosam!
+            section.start.column.column-middle
+                article.box.box_site.box_site--right
+                    .content
+                        .title.cl--orange
+                            h2 Titulo de prueba LQ
+                        .subtitle.cl--orange
+                            h3 Subtitulo de prueba LQ
+                        .paragraf.cl--orange
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, earum nisi est, ut ex impedit. Dolorem quam suscipit voluptas nemo ut, animi ullam, mollitia ducimus itaque esse, dolores aliquid laboriosam!
 //- Grid Container

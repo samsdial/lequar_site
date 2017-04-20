@@ -1,0 +1,1 @@
+$(function(){"use strict";svg4everybody({polyfill:!0})});
