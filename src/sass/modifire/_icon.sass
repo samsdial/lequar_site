@@ -1,19 +1,72 @@
-// icon.sass
-// @font-face
-//     font-family: 'icomoon'
-//     src: url('/fonts/icomoon.eot?rebqrs')
-//     src: url('/fonts/icomoon.eot?rebqrs#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?rebqrs') format('truetype'), url('/fonts/icomoon.woff?rebqrs') format('woff'),url('/fonts/icomoon.svg?rebqrs#icomoon') format('svg')
-//     font-weight: normal
-//     font-style: normal
+@font-face
+    font-family: 'icomoon'
+    src: url('/docs/fonts/icomoon.eot?sdq402')
+    src: url('/docs/fonts/icomoon.eot?sdq402#iefix') format('embedded-opentype'), url('/docs/fonts/icomoon.ttf?sdq402') format('truetype'), url('/docs/fonts/icomoon.ttf?sdq402') format('woff'),url('/docs/fonts/icomoon.svg?sdq402#icomoon') format('svg')
+    font-weight: normal
+    font-style: normal
 
 
-// [class^="icon-"], [class*=" icon-"]
-//     font-family: 'icomoon' !important
-//     speak: none
-//     font-style: normal
-//     font-weight: normal
-//     font-variant: normal
-//     text-transform: none
-//     line-height: 1
-//     -webkit-font-smoothing: antialiased
-//     -moz-osx-font-smoothing: grayscale
+[class^="icon-"], [class*=" icon-"]
+    font-family: 'icomoon' !important
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.icon
+    display: inline-block
+
+.lgs.icon-logo
+    padding-top: 100px
+    position: relative
+    &:after
+        content: "\e909"
+        +font-size(9)
+        position: absolute
+        top: 0
+        right: 25%
+        left: 25%
+
+.icon
+    &-down_arrow:before
+        content: "\e900"
+    &-up_arrow:before
+        content: "\e901"
+    &-branding:before
+        content: "\e902"
+    &-camera:before
+        content: "\e903"
+    &-chat:before
+        content: "\e904"
+    &-client:before
+        content: "\e905"
+    &-coffee:before
+        content: "\e906"
+    &-facebook:before
+        content: "\e907"
+    &-instagram:before
+        content: "\e908"
+    &-logo_simbolo:before
+        content: "\e909"
+    &-logo:before
+        content: "\e90a"
+    &-megaphone:before
+        content: "\e90b"
+    &-min_down_arrow:before
+        content: "\e90c"
+    &-min_lequa_hr:before
+        content: "\e90d"
+    &-min_up_arrow:before
+        content: "\e90e"
+    &-mouse:before
+        content: "\e90f"
+    &-project:before
+        content: "\e910"
+    &-trade:before
+        content: "\e911"
+    &-twitter:before
+        content: "\e912"

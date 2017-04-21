@@ -4,7 +4,15 @@
         box-shadow: 0 1px 1px rgba($black, .05)
     &_site
         height: 100vh
+        min-height: 250vh
+        max-height: 100vh
+        overflow: hidden
         &--left
-            padding: 40px 100px 40px 150px
+            padding: 40px 10px
+            +MQ(S)
+                padding: 40px 100px 40px 150px
+
         &--right
-            padding: 40px 150px 40px 100px
+            padding: 40px 10px
+            +MQ(S)
+                padding: 40px 150px 40px 100px
