@@ -20,6 +20,38 @@ a
     font-weight: 600
     -webkit-appearance: inherit
     +transition(all 0.3s ease-in-out)
+    &--max
+        width: 100%
+    &--middle
+        width: 50%
+    &_site
+        &--orange
+            background-color: $orange
+            border: 1px solid $orange
+            color: $white
+            [disable],
+            &.disable
+                background-color: $gainsboro
+                border: 1px solid $gainsboro
+                color: $gray
+                opacity: 0.7
+                box-shadow: none
+                cursor: not-allowed
+                +press
+                    background-color: $gainsboro
+                    border: 1px solid $gainsboro
+                    color: $orange
+            +press
+                background-color: $darkOrange
+                border-color: 1px solid $darkOrange
+
+        &--white
+            background-color: $white
+            border: 1px solid $orange
+            color: $orange
+// modulo
+.buttons
+    display: block
 // compuestos
 .btn
     &_ghost

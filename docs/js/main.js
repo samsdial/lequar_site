@@ -1,1 +1,1 @@
-$(function(){"use strict";svg4everybody({polyfill:!0})});
+!function(){function t(t){classie.add(t.target.parentNode,"input--field")}function e(t){""===t.target.value.trim()&&classie.remove(t.target.parentNode,"input--field")}String.prototype.trim||function(){String.prototype.trim=function(){return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"")}}(),[].slice.call(document.querySelectorAll(".input__field")).forEach(function(i){""!==i.value.trim()&&classie.add(i.parentNode,"input--field"),i.addEventListener("focus",t),i.addEventListener("blur",e)})}();

@@ -1,0 +1,38 @@
+<a class="btn btn-site" href="http://www.accelgen.com/catalog/beef-catalog.aspx?code=014AN00453&amp;language=english&amp;title=silveiras-conversion-3048" target="_blank">Ver Prueba</a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventaja Genetica</title>
+    <style type="text/css" media="screen">
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: #ebebeb;
+        }
+        h2, h3, h4, h5, h6, p{
+            color: black
+        }
+        .box_logo{
+            text-align: center;
+        }
+        main{
+            margin-top: 160px;
+        }
+        span.logo{
+            background: transparent url('http://ventajagenetica.com/img/ventaja-genetica-logo-1473784493.jpg')no-repeat center center/100%;
+            width: 400px;
+            height: 204px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body >
+<main>
+    <div class="box_logo">
+        <span class="logo"></span>
+        <h3>Sitio en Mantenimiento</h3>
+    </div>
+</main>
+</body>
+</html>

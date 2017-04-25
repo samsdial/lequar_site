@@ -34,11 +34,11 @@
             padding-left: 0px
             padding-right: 19px
             li
-                &:before
+                &:after
                     content: "-"
-                    position: relative
-                    right: 10px
-                    top: 25%
+                    position: absolute
+                    right: -12px
+                    top: 0%
         &--orange li
             color: $orange
             +heading
@@ -47,5 +47,56 @@
                 color: $orange
         &--white li
             color: $white
-            &:before
+            +heading
                 color: $white
+            &:before,
+            &:after
+                color: $white
+        &_join
+            li
+                position: relative
+            &--left
+                padding-left: 19px
+                & > li
+                    ul
+                        li
+                            list-style: none
+                    &:last-child
+                        &:after
+                            display: none
+                    &:before
+                        content: "●"
+                        position: absolute
+                        left: -22px
+                        top: 0
+                    &:after
+                        content: ""
+                        position: absolute
+                        left: -18px
+                        top: 11px
+                        border-width: 0.1rem
+                        border-style: dashed
+                        height: 100%
+            &--right
+                padding-right: 19px
+                & > li
+                    ul
+                        li
+                            list-style: none
+                            padding-bottom: 12px
+                    &:last-child
+                        &:after
+                            display: none
+                    &:before
+                        content: "●"
+                        position: absolute
+                        right: -22px
+                        top: 0
+                    &:after
+                        content: ""
+                        position: absolute
+                        right: -18px
+                        top: 11px
+                        border-width: 0.1rem
+                        border-style: dashed
+                        height: 100%
