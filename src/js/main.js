@@ -31,4 +31,29 @@
             classie.remove( ev.target.parentNode, 'input--field' );
         }
     }
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToScroll: 3,
+                slidesToShow: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        ]
+    });
 })();
